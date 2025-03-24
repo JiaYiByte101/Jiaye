@@ -1,4 +1,4 @@
-<img src="./MyDaily.png" alt="banner" width="100%"/>
+<img src="./Mydaily.png" alt="banner" width="100%"/>
 
 
 ---
