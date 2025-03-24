@@ -1,4 +1,5 @@
-<img src="https://raw.githubusercontent.com/JiayiByte101/Jiaye/MyDaily.png" alt="banner" width="100%"/>
+<img src="./MyDaily.png" alt="banner" width="100%"/>
+
 
 ---
 
