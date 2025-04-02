@@ -1,5 +1,4 @@
 ## 知识蒸馏 ##  
-Key words：大模型训练小模型、软标签生成、模型压缩、  
 
 <img src="./Demo.png" alt="banner" width="100%"/>  
 
@@ -8,7 +7,9 @@ Key words：大模型训练小模型、软标签生成、模型压缩、
 # 文献综述 #  
 # 1.Model Compression #  
 Core:*模型压缩，即将体积较大、性能卓越的大模型压缩为可在资源有限的设备上运行的小模型，且取得照样不错的结果*  
-- Background:集成学习取得了成功，许多模型能够取得优秀的测试结果，如NB、随机森林等等，但唯一的缺点就是*“体积大、速度慢、资源要求高”*
+- Background:集成学习取得了成功，许多模型能够取得优秀的测试结果，如NB、随机森林等等，但唯一的缺点就是**体积大、速度慢、资源要求高**
+- 
 
 # 2.Distilling the Knowledge in a Neural Network #  
+
 
