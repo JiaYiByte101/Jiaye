@@ -1,6 +1,7 @@
 ### 知识蒸馏 ###  
-
-<img src="./Demo.png" alt="banner" width="50%"/>  
+<div align="center">
+  <img src="./Demo.png" alt="banner" width="50%"/>  
+</div>
 
 - 其主要目的是为了压缩模型的体积，以便其更加适应轻量级环境的部署，例如自动驾驶汽车的障碍物识别等等，若是大型模型则会无法进行高效地、快速地识别以反应周遭变化快速的环境。
 
