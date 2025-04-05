@@ -30,7 +30,7 @@ Step2：构建Student，针对生成的伪标签数据集进行学习。
 在知识蒸馏中，我们使用高温 softmax（T>1）从教师模型中生成更平滑的soft targets，让学生模型可以学习到类间结构和细致判断。  
 在此基础上，Hinton还提出了一个混合损失函数：由hard targets和soft targets的交叉熵损失进行权重组合，得到的新的混合损失函数，以soft targets为主，佐以hard targets的方向修正，会得到更好的训练结果。    
 <div align="center">
-  <img src="./Loss.png" alt="banner" width="20%"/>  
+  <img src="./Loss.png" alt="banner" width="50%"/>  
 </div>   
 
   
