@@ -25,6 +25,10 @@ Step2：构建Student，针对生成的伪标签数据集进行学习。
 由于在概率极小的类别中依旧隐藏着大量的信息，而这些信息在经过Softmax之后很容易被忽略（如果输出向量实在过于尖锐，概率就实在是太低了，所蕴含的信息就很容易被小模型所忽略）。Caruana的做法是直接让Student学习每个分类类别的Logit，而Hinton则引入了“Temperature”这一超参数，并采用以下公式，对向量进行了“软化”：  
 <div align="center">
   <img src="./Formula_Temperature.png" alt="banner" width="20%"/>  
-</div> 
+</div>   
+将每个类别的输出logit Zi除以一个T（T在1周围波动）后再进行Softmax归一化，则会使其更加接近（T>1），或更加远离（T<1）。从而起到“软化”或者“锐化”的效果，以避免信息的流失。  
+在知识蒸馏中，我们使用高温 softmax（T>1）从教师模型中生成更平滑的soft targets，让学生模型可以学习到类间结构和细致判断。  
+在此基础上，Hinton还提出了一个混合损失函数：由hard targets和soft targets的交叉熵损失进行权重组合，得到的新的混合损失函数，以soft targets为主，佐以hard targets的方向修正，会得到更好的训练结果。  
+
   
 
