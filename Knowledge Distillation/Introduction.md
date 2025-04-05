@@ -21,7 +21,7 @@ Step2：构建Student，针对生成的伪标签数据集进行学习。
 - 在这个认知之下，Student训练所需要的样本数就比Teacher训练的样本数要少得多，因为当Teacher给出Soft Target时，其相较于One-hot编码输出的hard Target所蕴含的信息就要多得多，故所需要的样本也少很多。同时引入了在Hinton文章中的核心创新点：**Temperature**
 
 # Temperature #  
-由于在概率极小的类别中依旧隐藏着大量的信息，而这些信息在经过Softmax之后很容易被忽略（如果输出向量实在过于尖锐，概率实在是太低）。Caruana的做法是直接让Student学习每个分类类别的Logit，而Hinton则引入了“Temperature”这一超参数，并采用以下公式，对向量进行了“软化”：
+由于在概率极小的类别中依旧隐藏着大量的信息，而这些信息在经过Softmax之后很容易被忽略（如果输出向量实在过于尖锐，概率就实在是太低了，所蕴含的信息就很容易被小模型所忽略）。Caruana的做法是直接让Student学习每个分类类别的Logit，而Hinton则引入了“Temperature”这一超参数，并采用以下公式，对向量进行了“软化”：
   
   
 
